@@ -1,0 +1,173 @@
+.card{
+    background-color: transparent
+    ;
+    height: max;
+    max-height: 20rem;
+    width: 11rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0 15px 17px 0 rgb(187, 7, 163);
+    color: white;
+    max-width: 100vw;
+}
+
+.detailbutton{
+    box-shadow: 0 1px 3px 0 rgb(187, 7, 163);
+    background-color: black;
+    color: white
+}
+
+    
+
+.span{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.select{
+    background-color: transparent;
+    color: rgb(33, 214, 247);
+}
+
+.select >*{
+    color: rgb(33, 214, 247);
+    background-color: black;
+}
+
+.buttonPag{
+    background-color: black;
+    color: white
+}
+
+.h1{
+    font-size:4rem;
+    color: rgb(187, 7, 163);
+    position:relative;
+    font-weight:bold;
+}
+    .h1::before{
+    position:absolute;
+    content: attr(data-text);
+    text-shadow: 0px 0px 20px rgb(187, 7, 163);
+    filter: blur(10px) brightness(0);
+    animation: flicker 2s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes flicker {
+    0%{filter:blur(5px) brightness(1);}
+    3%{filter:blur(5px) brightness(0);}
+    6%{filter:blur(5px) brightness(1);}
+    7%{filter:blur(5px) brightness(0);}
+    8%{filter:blur(5px) brightness(1);}
+    9%{filter:blur(5px) brightness(0);}
+    10%{filter:blur(5px) brightness(1);}
+    20%{filter:blur(5px) brightness(0);}
+    50%{filter:blur(5px) brightness(1);}
+    90%{filter:blur(5px) brightness(0);}
+    100%{filter:blur(5px) brightness(1);}
+}
+
+.div{
+    background-color: transparent
+    ;
+    height: max;
+    max-height: 120rem;
+    width: 70rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0 7px 17px 0 rgb(187, 7, 163);
+    color: white;
+    max-width: 100vw;
+}
+
+.formBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.formBox{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 100vh;
+}
+
+.formCont{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    max-height: 100vh;
+}
+
+.formResults{
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+    margin-top: 20%;
+    
+}
+
+.genreContain{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.platformContain{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.platformsList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+}
+
+.genresList{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+}
